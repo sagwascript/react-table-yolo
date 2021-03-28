@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-container {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table {
+  border-collapse: collapse;
 }
 
-.App-link {
-  color: #61dafb;
+table > thead > tr {
+  height: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table tr {
+  border: 1px solid #333;
+}
+
+table td, table th {
+  border-right: 1px solid #333;
+}
+
+table > tbody > tr > td {
+  padding: 0.25rem;
+}
+
+.table-head, .table-body {
+  border: 1px solid #333;
+}
+
+.table-head .header-cell:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.table-body .row:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.header-cell {
+  /* border-top: 1px solid black; */
+  /* border-right: 1px solid black; */
+  font-weight: bold;
+  padding: 0.25rem;
+  white-space: nowrap;
+}
+
+.cell {
+  padding: 0.25rem;
+  white-space: nowrap;
+}
+
+.cell:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.info {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: #333;
+  color: #fff;
+  margin-bottom: 0.5rem;
 }
